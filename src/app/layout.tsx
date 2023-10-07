@@ -1,6 +1,8 @@
+import Header from "@/components/Header";
 import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
+import { cn } from "@/lib/utils";
 
 const inter = Ubuntu({
   subsets: ["latin"],
@@ -19,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, 'bg-neutral-950')}>
+        <Header />
+        {children}</body>
     </html>
   );
 }
