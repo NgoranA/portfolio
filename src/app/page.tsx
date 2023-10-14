@@ -19,7 +19,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col px-3 md:container max-w-7xl py-20 gap-3 md:gap-5">
       <section className="grid grid-cols-1 h-fit lg:grid-cols-2 gap-5">
         <Link href={""} className="">
-          <article className=" w-full px-2 group  sm:px-10 py-12 grid grid-cols-1  sm:grid-cols-2  gap-3 sm:gap-5 rounded-[30px] h-auto relative bg-gradient-to-br from-neutral-800 to-neutral-950 ">
+          <article className=" w-full px-4 group  sm:px-10 py-12 grid grid-cols-1  sm:grid-cols-2  gap-3 sm:gap-5 rounded-[30px] h-auto relative bg-gradient-to-br from-neutral-800 to-neutral-950 ">
             <Image
               src={bg}
               fill
@@ -107,7 +107,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 gap-5 h-auto w-full grid-cols-1">
+          <div className="grid sm:grid-cols-2 gap-5 h-full w-full grid-cols-1">
             <Link href={"/about"} className="h-full">
               <div className="bg-zinc-800 rounded-[30px]   h-full w-full relative group p-5 bg-gradient-to-br from-neutral-800 to-neutral-950">
                 <Image
@@ -753,8 +753,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="hidden md:block lg:hidden md:h-full md:p-3">
-        <div className="bg-zinc-800 rounded-[30px] h-fit md:h-auto w-full col-span-2 group relative bg-gradient-to-br from-neutral-800 to-neutral-900">
+      <section className="hidden md:block lg:hidden md:h-fit md:p-3">
+        <div className="bg-zinc-800  rounded-[30px] h-fit lg:h-auto w-full col-span-2 group relative bg-gradient-to-br from-neutral-800 to-neutral-900">
           <Image
             src={bg}
             fill
@@ -764,8 +764,8 @@ export default function Home() {
             sizes="100vw"
             style={{ objectFit: "cover" }}
           />
-          <div className="flex flex-col h-full gap-5 items-start  w-full p-5">
-            <div className="h-full   grid grid-cols-3 sm:grid-cols-7  ">
+          <div className="flex flex-col h-auto gap-5 items-start  w-full p-5">
+            <div className="h-auto grid grid-cols-3 sm:grid-cols-7  ">
               <div className="flex items-center justify-center">
                 <svg
                   width="120"
@@ -823,8 +823,8 @@ export default function Home() {
 
               <div className="flex items-center justify-center">
                 <svg
-                  width="100"
-                  height="100"
+                  width="120"
+                  height="120"
                   viewBox="0 0 261 261"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
