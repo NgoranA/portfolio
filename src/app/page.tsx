@@ -16,28 +16,26 @@ import { NavMenu } from "@/components/NavigationMenu";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col container max-w-7xl py-20 gap-3 md:gap-5">
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <Link href={""} className="group">
-          <article className=" w-full px-5  sm:px-10 py-12 grid grid-cols-1  sm:grid-cols-2  gap-3 sm:gap-5 rounded-[30px] h-full relative bg-gradient-to-br from-neutral-800 to-neutral-950 ">
+    <main className="flex min-h-screen flex-col px-3 md:container max-w-7xl py-20 gap-3 md:gap-5">
+      <section className="grid grid-cols-1 h-fit lg:grid-cols-2 gap-5">
+        <Link href={""} className="">
+          <article className=" w-full px-2 group  sm:px-10 py-12 grid grid-cols-1  sm:grid-cols-2  gap-3 sm:gap-5 rounded-[30px] h-auto relative bg-gradient-to-br from-neutral-800 to-neutral-950 ">
             <Image
               src={bg}
               fill
               alt="bg_picture"
               priority
-              className="rounded=[30px] overflow-clip opacity-10 w-full "
+              className="rounded=[30px] opacity-10 w-full "
               sizes="100vw"
               style={{ objectFit: "cover" }}
             />
-            <div className="h-full md:h-full w-full rounded-tl-[34px] flex items-center bg-stone-700 rounded-br-[34px] relative">
+            <div className="h-full md:h-auto w-full rounded-tl-[34px] flex items-center bg-stone-700 rounded-br-[34px] relative">
               <Image
                 src={profile}
                 alt="profile picture"
                 className="overflow-hidden rounded-tl-[34px] rounded-br-[34px]"
-                // fill
                 style={{ height: "100%", width: "100%" }}
                 priority
-                sizes="100vw"
               />
             </div>
             <div className="flex flex-col gap-3 justify-between h-full">
@@ -87,7 +85,7 @@ export default function Home() {
             </div>
           </article>
         </Link>
-        <article className="flex flex-col gap-5 w-full h-full">
+        <article className="flex flex-col gap-5 w-full h-auto">
           <div className="h-16 w-full relative rounded-[30px] px-7 flex items-center text-neutral-50 py-3 bg-neutral-900">
             <div className="uppercase overflow-x-hidden relative h-full w-full max-w-full flex items-center ">
               <div className="absolute whitespace-nowrap animate-marquee will-change-transform text-neutral-500 text-sm flex gap-5">
@@ -109,7 +107,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 gap-5 h-full w-full grid-cols-1">
+          <div className="grid sm:grid-cols-2 gap-5 h-auto w-full grid-cols-1">
             <Link href={"/about"} className="h-full">
               <div className="bg-zinc-800 rounded-[30px]   h-full w-full relative group p-5 bg-gradient-to-br from-neutral-800 to-neutral-950">
                 <Image
@@ -179,7 +177,7 @@ export default function Home() {
                   fill
                   alt="bg_picture"
                   priority
-                  className="rounded=[30px] overflow-clip opacity-10 "
+                  className="rounded=[30px] opacity-10 "
                   sizes="100vw"
                   style={{ objectFit: "cover" }}
                 />
@@ -235,8 +233,8 @@ export default function Home() {
           </div>
         </article>
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-5 md:space-y-0 md:gap-5 h-fit md:h-full w-full">
-        <div className="bg-zinc-800 rounded-[30px] h-fit md:h-full w-full relative group bg-gradient-to-br from-neutral-800 to-neutral-950 p-5">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-5 md:space-y-0 md:gap-5 h-fit md:h-auto md:p-3 w-full">
+        <div className="bg-zinc-800 rounded-[30px] h-fit md:h-auto w-full relative group bg-gradient-to-br from-neutral-800 to-neutral-950 p-5">
           <Image
             src={bg}
             fill
@@ -247,17 +245,16 @@ export default function Home() {
             style={{ objectFit: "cover" }}
           />
           <div className="flex flex-col h-full gap-5  w-full">
-            <div className="h-full flex items-center justify-center">
+            <div className="h-auto flex items-center justify-center">
               <Image
                 src={jsnad}
                 alt="showcase_icon"
-                className="h-50"
                 height={150}
                 width={150}
                 sizes="90vw"
               />
             </div>
-            <div className="flex justify-between w-full">
+            <div className="flex justify-between h-auto w-full">
               <div className="flex flex-col gap-3">
                 <p className="text-neutral-400 text-xs">PRIDE</p>
                 <p className="text-neutral-50 font-semibold">ACHIEVEMENTS</p>
@@ -295,7 +292,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-zinc-800 md:hidden lg:block  rounded-[30px] h-fit md:h-full w-full col-span-2 group relative bg-gradient-to-br from-neutral-800 to-neutral-900">
+        <div className="bg-zinc-800 md:hidden lg:block  rounded-[30px] h-fit lg:h-auto w-full col-span-2 group relative bg-gradient-to-br from-neutral-800 to-neutral-900">
           <Image
             src={bg}
             fill
@@ -305,8 +302,8 @@ export default function Home() {
             sizes="100vw"
             style={{ objectFit: "cover" }}
           />
-          <div className="flex flex-col h-full gap-5 items-start  w-full p-5">
-            <div className="h-full   grid grid-cols-3 sm:grid-cols-7  ">
+          <div className="flex flex-col h-auto gap-5 items-start  w-full p-5">
+            <div className="h-auto   grid grid-cols-3 sm:grid-cols-7  ">
               <div className="flex items-center justify-center">
                 <svg
                   width="120"
@@ -676,7 +673,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-zinc-800 rounded-[30px] p-5 relative group h-fit md:h-full w-full bg-gradient-to-br from-neutral-800 to-neutral-950">
+        <div className="bg-zinc-800 rounded-[30px] p-5 relative group h-fit md:h-auto w-full bg-gradient-to-br from-neutral-800 to-neutral-950">
           <Image
             src={bg}
             fill
@@ -756,8 +753,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="hidden md:block lg:hidden">
-        <div className="bg-zinc-800 rounded-[30px] h-fit md:h-full w-full col-span-2 group relative bg-gradient-to-br from-neutral-800 to-neutral-900">
+      <section className="hidden md:block lg:hidden md:h-full md:p-3">
+        <div className="bg-zinc-800 rounded-[30px] h-fit md:h-auto w-full col-span-2 group relative bg-gradient-to-br from-neutral-800 to-neutral-900">
           <Image
             src={bg}
             fill
@@ -1139,8 +1136,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 space-y-5 sm:space-y-0 sm:gap-5 h-fit  sm:h-full w-full">
-        <div className="text-neutral-50 relative bg-zinc-800 grid grid-cols-1 md:grid-cols-3 gap-5 rounded-[30px] h-full md:h-full p-5 w-full bg-gradient-to-br from-zinc-800 to-neutral-900">
+      <section className="grid grid-cols-1 md:grid-cols-2 space-y-5 sm:space-y-0 sm:gap-5 h-fit  sm:h-auto w-full">
+        <div className="text-neutral-50 relative bg-zinc-800 grid grid-cols-1 md:grid-cols-3 gap-5 rounded-[30px] h-full md:h-auto p-5 w-full bg-gradient-to-br from-zinc-800 to-neutral-900">
           <Image
             src={bg}
             fill
@@ -1169,7 +1166,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-zinc-800 rounded-[30px] relative h-full group w-full bg-gradient-to-br from-neutral-800 flex gap-5 flex-col  to-neutral-950">
+        <div className="bg-zinc-800 rounded-[30px] relative h-auto group w-full bg-gradient-to-br from-neutral-800 flex gap-5 flex-col  to-neutral-950">
           <Image
             src={bg}
             fill
