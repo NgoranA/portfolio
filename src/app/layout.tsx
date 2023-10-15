@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import { cn } from "@/lib/utils";
+import LittleNav from "@/components/LittleNav";
 
 const inter = Ubuntu({
   subsets: ["latin"],
@@ -21,9 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'bg-neutral-950')}>
+      <body className={cn(inter.className, "bg-neutral-950")}>
         <Header />
-        {children}</body>
+        {children}
+        <LittleNav />
+      </body>
     </html>
   );
 }
