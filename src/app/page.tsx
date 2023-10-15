@@ -4,14 +4,8 @@ import bg from "../../public/bg1.png";
 import Link from "next/link";
 import showcase from "../../public/works.png";
 import signature from "../../public/signature.png";
-import {
-  TwitterLogoIcon,
-  LinkedInLogoIcon,
-  GitHubLogoIcon,
-  StarIcon,
-} from "@radix-ui/react-icons";
+import { StarIcon } from "@radix-ui/react-icons";
 import jsnad from "../../public/jsnad.png";
-import { NavMenu } from "@/components/NavigationMenu";
 import ConnectTotals from "@/components/ConnectTotals";
 import Socials from "@/components/Socials";
 
