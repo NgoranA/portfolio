@@ -21,8 +21,8 @@ const LittleNav = () => {
     },
   ];
   return (
-    <div className="flex items-center justify-center px-3 w-full overflow-hidden">
-      <nav className="rounded-full px-2 py-2 overflow-hidden backdrop-blur-lg bg-neutral-700/30 md:hidden fixed bottom-5  w-fit">
+    <div className="flex items-center justify-center w-full ">
+      <nav className="rounded-full px-2 py-2 backdrop-blur-lg bg-neutral-700/30 md:hidden fixed bottom-5  w-fit">
         <ul className=" text-neutral-50 flex space-x-2 justify-between items-center">
           {menu.map((link) => {
             return (
