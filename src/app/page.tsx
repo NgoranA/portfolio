@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profile from "../../public/profile.jpeg";
+import profile from "../../public/profile1.jpg";
 import bg from "../../public/bg1.png";
 import Link from "next/link";
 import showcase from "../../public/works.png";
@@ -297,7 +297,7 @@ export default function Home() {
             sizes="100vw"
             style={{ objectFit: "cover" }}
           />
-          <div className="flex flex-col h-auto gap-5 items-start  w-full p-5">
+          <div className="flex flex-col h-auto gap-8 items-start  w-full p-5">
             <div className="h-auto   grid grid-cols-3 sm:grid-cols-7  ">
               <div className="flex items-center justify-center">
                 <svg
@@ -630,7 +630,7 @@ export default function Home() {
                 </svg>
               </div>
             </div>
-            <div className="flex justify-between w-full">
+            <div className="flex justify-between w-full items-center">
               <div className="flex flex-col gap-3">
                 <p className="text-neutral-400 text-xs">TECHHNOLOGIES</p>
                 <p className="text-neutral-50 font-semibold">TECH STACKS</p>
