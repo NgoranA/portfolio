@@ -9,7 +9,7 @@ import AboutMeContent from "@/components/AboutMeContent";
 function page() {
   return (
     <main className="flex min-h-screen flex-col md:flex-row px-3 md:container max-w-7xl py-20 gap-3 md:gap-14">
-      <section className="w-full md:w-4/12 px-4  sm:px-6 py-12 sm:py-6 flex flex-col  gap-3 sm:gap-5 rounded-[30px] h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-950 ">
+      <section className="w-full md:w-4/12 px-4  sm:px-6 py-12 sm:py-6 flex flex-col  gap-3 sm:gap-5 rounded-[30px] h-fit relative bg-gradient-to-br from-neutral-900 to-neutral-950 ">
         <div className="h-full md:h-auto w-full rounded-3xl flex items-center relative">
           <Image
             src={profile}
