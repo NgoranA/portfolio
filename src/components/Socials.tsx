@@ -1,11 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import bg from "../../public/bg1.png";
-import {
-  TwitterLogoIcon,
-  LinkedInLogoIcon,
-  GitHubLogoIcon,
-} from "@radix-ui/react-icons";
+import SocialIcon from "@/components/SocialIcons";
 
 const Socials = () => {
   return (
@@ -21,23 +17,7 @@ const Socials = () => {
       />
 
       <div className="flex flex-col h-fit md:h-full gap-5  w-full">
-        <div className="h-fit md:h-full gap-5 grid grid-cols-3 w-full text-neutral-50">
-          <div className="flex items-center justify-center">
-            <div className="rounded-full flex items-center justify-center h-14 w-14 p-4 bg-neutral-800">
-              <LinkedInLogoIcon className="h-15 w-15" height={50} width={50} />
-            </div>
-          </div>
-          <div className="flex items-center justify-center">
-            <div className="rounded-full flex items-center justify-center h-14 w-14 p-4 bg-neutral-800">
-              <TwitterLogoIcon className="h-15 w-15" height={50} width={50} />
-            </div>
-          </div>
-          <div className="flex items-center justify-center">
-            <div className="rounded-full flex items-center justify-center h-14 w-14 p-4 bg-neutral-800">
-              <GitHubLogoIcon className="h-15 w-15" height={50} width={50} />
-            </div>
-          </div>
-        </div>
+        <SocialIcon />
         <div className="flex justify-between w-full">
           <div className="flex flex-col gap-3">
             <p className="text-neutral-400 text-xs">STAY WITH ME</p>
