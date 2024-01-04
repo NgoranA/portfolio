@@ -1,5 +1,4 @@
 import React from "react";
-import ExperienceEdu from "./ExperienceEdu";
 
 export type ExperienceEdu = {
   year: string;
