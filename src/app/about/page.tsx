@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import bg from "../../../public/bg1.png";
 import profile from "../../../public/profile.jpg";
 import SocialIcons from "@/components/SocialIcons";
 import { Button } from "@/components/ui/button";

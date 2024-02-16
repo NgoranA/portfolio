@@ -1,9 +1,12 @@
-import React from 'react'
+import Contact from "@/components/Contact";
+import React from "react";
 
 function page() {
   return (
-    <div>Contact</div>
-  )
+    <main className=" md:container max-w-7xl text-neutral-50 py-10">
+      <Contact />
+    </main>
+  );
 }
 
-export default page
+export default page;
