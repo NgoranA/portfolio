@@ -10,8 +10,8 @@ const syne = Syne({ weight: ["600"], subsets: ["latin"] });
 
 const Header = () => {
   return (
-    <header className="text-zinc-600 h-20">
-      <div className="max-w-7xl h-full container flex items-center justify-between">
+    <header className="md:container text-zinc-600  h-20  bg-inherit z-50 top-0 sticky">
+      <div className="h-full flex  items-center justify-between ">
         <div className=" flex items-center w-full md:w-fit justify-between gap-3">
           <Image src={logo} alt="logo" height={0} width={50} />
           <h1

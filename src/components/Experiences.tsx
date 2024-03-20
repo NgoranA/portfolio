@@ -11,20 +11,28 @@ export type ExperienceEdu = {
 function Experiences() {
   const experiences: ExperienceEdu[] = [
     {
-      year: "2021 - present",
+      year: "October 2023 - Present",
+      role: "Support Staff and Nodejs Tutor",
+      company: "Rebase Code Camp",
+      id: 1,
+      details:
+        "A student guide and Teaching Nodejs Fundamentals",
+    },
+    {
+      year: "2021 - 2023",
       role: "Frontend Developer",
       company: "InfoLab Technologies",
       id: 1,
       details:
-        "LLorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatatLorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatatLorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatatorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+        "Building Laundry Management System for Cameroon Laundry Businesses built with Next.js, Reactjs, Prime-react, Prime-flex, Typescript and Django",
     },
     {
       year: "2020 - present",
-      role: "Fullstack Developer",
-      company: "InfoLab Technologies",
+      role: "Developer",
+      company: "Freelancing ",
       id: 2,
       details:
-        "LLorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatatLorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatatLorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatatorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+        "Building Customer based projects and Devoting to continuous Learning, Growth and Skill uplifting",
     },
   ];
   return (
