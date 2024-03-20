@@ -4,6 +4,7 @@ import profile from "../../../public/profile.jpg";
 import SocialIcons from "@/components/SocialIcons";
 import { Button } from "@/components/ui/button";
 import AboutMeContent from "@/components/AboutMeContent";
+import Link from "next/link";
 
 function page() {
   return (
@@ -28,8 +29,10 @@ function page() {
           <div className="">
             <SocialIcons />
           </div>
-          <Button className="py-6 hover:bg-neutral-100 rounded-3xl cursor-pointer hover:text-neutral-800">
-            Contact Me
+          <Button className="py-6 hover:bg-neutral-100 rounded-3xl cursor-pointer hover:text-neutral-800" asChild>
+            <Link href={"/contact"}>
+              Contact Me
+            </Link>
           </Button>
         </div>
       </section>
