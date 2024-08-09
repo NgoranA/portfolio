@@ -8,10 +8,12 @@ import { StarIcon } from "@radix-ui/react-icons";
 import jsnad from "../../public/jsnad.png";
 import ConnectTotals from "@/components/ConnectTotals";
 import Socials from "@/components/Socials";
+import GetData from "@/components/GetData";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col px-3 md:container max-w-7xl py-10 md:py-20 gap-3 md:gap-5">
+      <GetData />
       <section className="grid grid-cols-1 h-fit lg:grid-cols-2 gap-5">
         <Link href={""} className="">
           <article className=" w-full px-4 group  sm:px-10 py-12 grid grid-cols-1  sm:grid-cols-2  gap-3 sm:gap-5 rounded-[30px] h-auto relative bg-gradient-to-br from-neutral-800 to-neutral-950 ">

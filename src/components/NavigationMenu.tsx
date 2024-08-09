@@ -15,57 +15,44 @@ import { usePathname } from "next/navigation";
 
 export function NavMenu() {
   const pathname = usePathname();
+  const menusItems = [
+    {
+      url: "/",
+      label: "Home"
+    },
+    {
+      url: "/about",
+      label: "About"
+    },
+    {
+      url: "/projects",
+      label: "Projects"
+    },
+    {
+      url: "/contact",
+      label: "Contact"
+    },
+  ]
   return (
     <NavigationMenu className="hidden md:block">
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                `${pathname === "/" ? "text-neutral-100" : null}`,
-              )}
-            >
-              Home
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                `${pathname === "/about" ? "text-neutral-100" : null}`,
-              )}
-            >
-              About
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/works" legacyBehavior passHref>
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                `${pathname === "/works" ? "text-neutral-100" : null}`,
-              )}
-            >
-              Works
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/contact" legacyBehavior passHref>
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                `${pathname === "/contact" ? "text-neutral-100" : null}`,
-              )}
-            >
-              Contact
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+        {
+          menusItems.map((menuItem) => (
+
+            <NavigationMenuItem key={menuItem.url}>
+              <Link href={`${menuItem.url}`} legacyBehavior passHref>
+                <NavigationMenuLink
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    `${pathname === menuItem.url ? "text-neutral-100" : null}`,
+                  )}
+                >
+                  {menuItem.label}
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          ))
+        }
       </NavigationMenuList>
     </NavigationMenu>
   );
