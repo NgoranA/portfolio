@@ -24,10 +24,10 @@ export function NavMenu() {
       url: "/about",
       label: "About"
     },
-    {
-      url: "/projects",
-      label: "Projects"
-    },
+    // {
+    //   url: "/works",
+    //   label: "Projects"
+    // },
     {
       url: "/contact",
       label: "Contact"
